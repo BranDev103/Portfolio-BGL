@@ -1,0 +1,455 @@
+:root {
+
+  --color-text: #FFFFFF;
+  --color-green: #344C36;
+  --color-cream: #F7EFE2;
+  --color-orange: #FEAE17;
+  --color-black: #000000;
+
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-titulos: 'Brasika Display - Trial';
+}
+
+@font-face {
+  font-family: 'Brasika Display - Trial';
+  src: url('BrasikaDisplayTrial-Regular.woff2') format('woff2'),
+    url('BrasikaDisplayTrial-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-green);
+  color: var(--color-text);
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+/************************* HEADER ********************************************/
+header {
+  width: 100%;
+  margin: 15px auto;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  top: 0;
+  z-index: 5;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+/************** TITULO ***************************************************/
+.title {
+  font-family: var(--font-titulos);
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-left: 20px;
+  color: var(--color-text);
+
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 10%;
+  left: 0px;
+  background-color: #FD6037;
+}
+
+/************** TITULO ***************************************************/
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding-right: 2em;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 12px 2em;
+  font-size: 18px;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ccc4b8;
+}
+
+.button {
+  border: 1px solid var(--color-orange);
+  border-radius: 15px;
+  margin-left: 2em;
+  background-color: var(--color-orange);
+  color: var(--color-black);
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--color-text);
+  transition: .3s;
+}
+
+/*** NAVBAR ******/
+.title.dark-title {
+  color: var(--color-black);
+  transition: .2s;
+}
+
+.navbar.black a {
+  color: var(--color-black);
+  transition: .2s;
+}
+
+.navbar.black a:hover {
+  color: #e04d29;
+}
+
+/*** NAVBAR ******/
+
+/***********************TERMINA HEADER******************************************************/
+
+/************************* PRESENTACION ***************************************************/
+.presenta {
+  margin-top: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-p {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presenta .title_back {
+  font-family: var(--font-titulos);
+  line-height: 1.2;
+  font-size: 8em;
+  padding: 0;
+}
+
+.presenta .title_back:nth-of-type(1) {
+  color: var(--color-cream);
+  -webkit-text-stroke: none;
+  z-index: 4;
+}
+
+.presenta .title_back:nth-of-type(n+2) {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-orange);
+  z-index: 2;
+}
+
+.foto {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 14%;
+  margin-top: 4em;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+/********* LINKS SOCIAL ************************************************************************************/
+.links {
+  position: absolute;
+  width: 38%;
+  height: 230px;
+  background-color: var(--color-green);
+  margin-top: 7em;
+  right: 0px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.links a {
+  font-size: 15px;
+  font-family: var(--font-montserrat);
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: start;
+  letter-spacing: 2px;
+
+}
+
+.links i {
+  width: 20px;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.social__a.facebook:hover {
+  background-color: #1877F2;
+}
+
+.social__a.whatsapp:hover {
+  background-color: #19af50;
+}
+
+.social__a.linkedin:hover {
+  background-color: #0A66C2;
+}
+
+.social__a.github:hover {
+  background-color: #181717;
+}
+
+.social__a:hover {
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+/**********************************************************************************************************************/
+.container-desc {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-weight: 500;
+  top: 45rem;
+}
+
+.descripcion {
+  width: 33%;
+  color: var(--color-text);
+  padding: 20px 1em;
+  text-align: justify;
+  position: relative;
+  left: 8%;
+  z-index: 4;
+  border-radius: 20px;
+  line-height: 1.4;
+}
+
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: var(--color-orange);
+  top: 53em;
+  border-radius: 50%;
+}
+
+/*********** TERMINA PRESENTACION **************************************************************************************/
+
+/************** ABOUT ME ***********************************************************************************************/
+.about_me {
+  min-height: 100vh;
+  margin-top: 7em;
+  background-color: var(--color-cream);
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_desc {
+  width: 63%;
+  flex-direction: column;
+  margin: 0 5em;
+}
+
+.hi,
+.title_main {
+  margin: 0 100px;
+  font-size: 4.5em;
+  font-family: var(--font-titulos);
+}
+
+.description {
+  font-family: var(--font-montserrat);
+  font-size: 19px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.contact {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  right: 8%;
+  margin-top: 10em;
+  width: 430px;
+  height: 580px;
+  color: var(--color-text);
+
+  z-index: 3;
+}
+
+.container_grid {
+  height: 200px;
+  background-color: var(--color-black);
+  font-family: var(--font-titulos);
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.contact_info{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em;
+}
+
+.contact_info a {
+  font-size: 12px;
+  font-family: var(--font-montserrat);
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: start;
+  letter-spacing: 2px;
+
+}
+
+.contact_info i {
+  width: 20px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.social__a.email:hover {
+  background-color: #DB4437;
+}
+
+.fecha_nacimiento{
+  position: absolute;
+  background-color: var(--color-orange);
+  color: var(--color-black);
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  letter-spacing: 2px;
+  right: 27%;
+  z-index: 4;
+}
+
+.nationality{
+  position: absolute;
+  background-color: var(--color-orange);
+  color: var(--color-black);
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  letter-spacing: 2px;
+  right: 7%;
+  top: 1em;
+  z-index: 4;
+
+}
+
+
+
+
+/*********** TERMINA ABOUT ME **************************************************************************************/
+
+/************** RESUME *********************************************************************************************/
+.resume {
+  color: var(--color-black);
+  min-height: 100vh;
+}
+
+
+
+
+/************** TERMINA RESUME *************************************************************************************/
+
+
+
+
+
+
+footer {
+  margin-top: 12em;
+  padding: 1.5em 1em;
+  background-color: var(--color-cream);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+
+}
+
+footer li {
+  font-size: 18px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+footer li:hover {
+  color: #DCD7C9;
+}
+
+footer span {
+  font-size: 14px;
+}
+
+
+/***********************************************************************************************************************/
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
