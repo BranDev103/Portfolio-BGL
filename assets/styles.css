@@ -34,7 +34,8 @@ body {
 
 /************************* PRESENTACION ***************************************************/
 .presenta {
-  min-height: 100vh; /* */
+  min-height: 100vh;
+  /* */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +43,8 @@ body {
 }
 
 .container-p {
-  margin-top: 12em; /* */
+  margin-top: 12em;
+  /* */
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -221,7 +223,7 @@ body {
   padding: 10px 0;
 }
 
-.contact_info{
+.contact_info {
   display: flex;
   flex-direction: column;
   margin: 0 2em;
@@ -248,7 +250,7 @@ body {
   background-color: #DB4437;
 }
 
-.fecha_nacimiento{
+.fecha_nacimiento {
   position: absolute;
   background-color: var(--color-orange);
   color: var(--color-black);
@@ -262,7 +264,7 @@ body {
   z-index: 4;
 }
 
-.nationality{
+.nationality {
   position: absolute;
   background-color: var(--color-orange);
   color: var(--color-black);
@@ -281,10 +283,10 @@ body {
   position: absolute;
   top: 70%;
   left: -10%;
-  z-index: -1; 
+  z-index: -1;
 }
 
-.contact .title_back{
+.contact .title_back {
   font-family: var(--font-titulos);
   color: transparent;
   -webkit-text-stroke: 2px var(--color-orange);
@@ -292,22 +294,57 @@ body {
   line-height: 1;
 }
 
-
 /*********** TERMINA ABOUT ME **************************************************************************************/
 
 /************** RESUME *********************************************************************************************/
 .resume {
+  width: 100%;
   min-height: 100vh;
   margin-top: 2em;
+  color: var(--color-text);
+
 }
 
+.container_resume {
+  width: 40%;
+  font-size: 22px;
+  margin: 5em;
+
+}
+
+.container_resume h2 {
+  font-size: 40px;
+  margin-left: 10px;
+  font-family: var(--font-titulos);
+  color: var(--color-orange);
+  letter-spacing: 2px;
+}
+
+.education {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 10px;
+  gap: 20px;
+}
+.education #year{
+  font-family: var(--font-titulos);
+}
+.education div p:nth-child(2)
+{
+  font-size: 15px;
+  font-style: italic;
+}
 
 
 
 /************** TERMINA RESUME *************************************************************************************/
 
 /************** WORK **********************************************************************************************/
-.work{
+.work {
   color: var(--color-black);
   background-color: var(--color-cream);
   min-height: 100vh;
