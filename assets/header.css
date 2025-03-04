@@ -1,0 +1,109 @@
+/************************* HEADER ********************************************/
+header {
+    width: 100%;
+    margin: 15px auto;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    top: 0;
+    z-index: 5;
+  }
+  
+  main {
+    width: 100%;
+    height: auto;
+  }
+  
+  /************** TITULO ***************************************************/
+  .title {
+    font-family: var(--font-titulos);
+    letter-spacing: 2px;
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 20px;
+    color: var(--color-text);
+  
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 10%;
+    left: 0px;
+    background-color: #FD6037;
+  }
+  
+  /************** TITULO ***************************************************/
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding-right: 2em;
+  }
+  
+  nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 12px 2em;
+    font-size: 18px;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #ccc4b8;
+  }
+  
+  .button {
+    border: 1px solid var(--color-orange);
+    border-radius: 15px;
+    margin-left: 2em;
+    background-color: var(--color-orange);
+    color: var(--color-black);
+  }
+  
+  .button:hover {
+    background: transparent;
+    color: var(--color-text);
+    transition: .3s;
+  }
+  
+  /*** NAVBAR ******/
+  .title.dark-title {
+    color: var(--color-black);
+    transition: .2s;
+  }
+  
+  .navbar.black a {
+    color: var(--color-black);
+    transition: .2s;
+  }
+  
+  .navbar.black a:hover {
+    color: #e04d29;
+  }
+  
+  /*** NAVBAR ******/
+  
+  /***********************TERMINA HEADER******************************************************/

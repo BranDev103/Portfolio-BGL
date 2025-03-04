@@ -2,6 +2,7 @@
 const navbar = document.getElementById("navbar");
 const title = document.getElementById("title");
 const aboutMeSection = document.querySelector('.about_me');
+const workSection = document.querySelector('.work');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -16,3 +17,4 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 observer.observe(aboutMeSection);
+observer.observe(workSection);
