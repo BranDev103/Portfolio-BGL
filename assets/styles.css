@@ -344,7 +344,7 @@ body {
   background-color: var(--color-orange);
   border-radius: 5px;
   right: 2%;
-  top: 270%;
+  top: 280%;
   z-index: 4;
 
 }
@@ -393,6 +393,11 @@ body {
   font-size: 20px;
   color: var(--color-black);
   background-color: var(--color-cream);
+}
+
+.coding i:hover, .software i:hover{
+  cursor: pointer;
+  transform: scale(0.94);
 }
 
 
