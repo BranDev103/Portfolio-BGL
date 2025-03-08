@@ -210,7 +210,6 @@ body {
   width: 430px;
   height: 580px;
   color: var(--color-text);
-
   z-index: 3;
 }
 
@@ -302,14 +301,12 @@ body {
   min-height: 100vh;
   margin-top: 2em;
   color: var(--color-text);
-
 }
 
 .container_resume {
-  width: 40%;
+  width: 100%;
   font-size: 22px;
-  margin: 5em;
-
+  padding: 5em 0 0 8em;
 }
 
 .container_resume h2 {
@@ -317,7 +314,7 @@ body {
   margin-left: 10px;
   font-family: var(--font-titulos);
   color: var(--color-orange);
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 .education {
@@ -330,15 +327,73 @@ body {
   margin: 10px;
   gap: 20px;
 }
-.education #year{
+
+.education #year {
   font-family: var(--font-titulos);
 }
-.education div p:nth-child(2)
-{
+
+.education div p:nth-child(2) {
   font-size: 15px;
   font-style: italic;
 }
 
+.skills {
+  position: absolute;
+  width: 40%;
+  height: 41%;
+  background-color: var(--color-orange);
+  border-radius: 5px;
+  right: 2%;
+  top: 270%;
+  z-index: 4;
+
+}
+
+.skills h2 {
+  color: var(--color-black);
+  font-family: var(--font-titulos);
+  text-align: center;
+  font-size: 30px;
+}
+
+.container_skills {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--font-titulos);
+  margin-top: 10px;
+
+}
+
+.software {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.coding {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.coding div, .software div{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.coding i, .software i{
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--color-black);
+  background-color: var(--color-cream);
+}
 
 
 /************** TERMINA RESUME *************************************************************************************/
