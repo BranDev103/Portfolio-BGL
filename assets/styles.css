@@ -35,7 +35,6 @@ body {
 /************************* PRESENTACION ***************************************************/
 .presenta {
   min-height: 100vh;
-  /* */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +43,6 @@ body {
 
 .container-p {
   margin-top: 12em;
-  /* */
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -310,7 +308,7 @@ body {
 }
 
 .container_resume h2 {
-  font-size: 40px;
+  font-size: 50px;
   margin-left: 10px;
   font-family: var(--font-titulos);
   color: var(--color-orange);
@@ -340,11 +338,11 @@ body {
 .skills {
   position: absolute;
   width: 40%;
-  height: 41%;
+  height: 58%;
   background-color: var(--color-orange);
   border-radius: 5px;
   right: 2%;
-  top: 280%;
+  top: 270%;
   z-index: 4;
 
 }
@@ -360,6 +358,8 @@ body {
   display: flex;
   justify-content: space-around;
   font-family: var(--font-titulos);
+  color: var(--color-cream);
+  font-size: 22px;
   margin-top: 10px;
 
 }
@@ -388,9 +388,10 @@ body {
 }
 
 .coding i, .software i{
-  padding: 15px;
+  padding: 12px;
   border-radius: 5px;
   font-size: 20px;
+  text-align: center;
   color: var(--color-black);
   background-color: var(--color-cream);
 }
@@ -400,6 +401,20 @@ body {
   transform: scale(0.94);
 }
 
+.language div{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.language p{
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  background-color: var(--color-black);
+  color: var(--color-text);
+  padding: 8px;
+  border-radius: 10px;
+}
 
 /************** TERMINA RESUME *************************************************************************************/
 
@@ -408,16 +423,71 @@ body {
   color: var(--color-black);
   background-color: var(--color-cream);
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title_work {
+  position: absolute;
+  width: 80%;
+  left: 15%;
+  top: 310%;
+}
+
+.work .title_back {
+  font-family: var(--font-titulos);
+  line-height: 1.2;
+  font-size: 8em;
+  padding: 0;
+  z-index: -1;
+}
+
+.work .title_back {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-orange);
+  z-index: -1;
+}
+
+.work h2{
+  position:relative;
+  font-family: var(--font-titulos);
+  right: 18%;
+  top: 40px;
+  font-size: 6em;
+  z-index: 5;
+}
+
+.container_work{
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:2em;
+  z-index: 4;
+}
+
+.project{
+  width:300px;
+  height:400px;
+  background-color:var(--color-orange);
+  border: 2px solid var(--color-green);
+  border-radius: 10px;
+  text-align:center;
 }
 
 
 
+
+
+
+
 footer {
-  margin-top: 12em;
+  
   padding: 1.5em 1em;
-  background-color: var(--color-cream);
+  background-color: var(--color-green);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--color-black);
+  color: var(--color-texts);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -445,15 +515,3 @@ footer span {
 }
 
 
-/***********************************************************************************************************************/
-@keyframes pulse {
-  from {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-
-  to {
-    transform: scale(1.8);
-    opacity: 0;
-  }
-}
